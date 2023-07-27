@@ -1,24 +1,25 @@
 {
-  const persons: string[] = [];
-
-  function addPerson(firstName: string, lastName: string) {
-    const name: string = firstName + lastName;
-    persons.push(name);
+  const JohnDoe = {
+    id: 1,
+    firstName: 'John',
+    lastName: 'Doe',
+    role: 1
   }
 
-  let firstName: string = 'John';
-  let lastName: string = 'Doe';
-  let age: number = 18;
-
-  const person: {
-    firstName: string;
-    lastName: string
-  } = {
-    firstName,
-    lastName
+  const AmandaDoe = {
+    id: 2,
+    firstName: 'John',
+    lastName: 'Doe',
+    role: 2
   }
 
-  addPerson(person.firstName, person.lastName);
-  addPerson('Amanda', 'Doe');
-  addPerson('Thomas', 'Jefferson');
+  const ThomasJefferson = {
+    id: 'rwe5345sfst3453543',
+    firstName: 'John',
+    lastName: 'Doe',
+    role: 3
+  }
+
+  const names = [JohnDoe.firstName, AmandaDoe.firstName, ThomasJefferson.firstName];
+  const JohnDoeSummary = [JohnDoe.firstName, JohnDoe.lastName, JohnDoe.age];
 }
