@@ -1,25 +1,52 @@
 {
-  const JohnDoe = {
+  enum Roles {
+    Admin,
+    Moderator,
+    User,
+  }
+
+  const JohnDoe: {
+    id: string | number;
+    firstName: string;
+    lastName: string;
+    role: Roles;
+  }
+  = {
     id: 1,
     firstName: 'John',
     lastName: 'Doe',
-    role: 1
+    role: Roles.Admin
   }
 
-  const AmandaDoe = {
+
+  const AmandaDoe: {
+    id: string | number;
+    firstName: string;
+    lastName: string;
+    role: Roles;
+  }
+  = {
     id: 2,
     firstName: 'John',
     lastName: 'Doe',
-    role: 2
+    role: Roles.Moderator
   }
 
-  const ThomasJefferson = {
+
+  const ThomasJefferson: {
+    id: string | number;
+    firstName: string;
+    lastName: string;
+    role: Roles;
+  }
+  = {
     id: 'rwe5345sfst3453543',
     firstName: 'John',
     lastName: 'Doe',
-    role: 3
+    role: Roles.User
   }
 
-  const names = [JohnDoe.firstName, AmandaDoe.firstName, ThomasJefferson.firstName];
-  const JohnDoeSummary = [JohnDoe.firstName, JohnDoe.lastName, JohnDoe.age];
+
+  const names: [string, string, string] = [JohnDoe.firstName, AmandaDoe.firstName, ThomasJefferson.firstName]
+  const JohnDoeSummary: [string, string, Roles] = [JohnDoe.firstName, JohnDoe.lastName, JohnDoe.role]
 }
