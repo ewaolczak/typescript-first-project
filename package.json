@@ -1,0 +1,23 @@
+{
+  "name": "typescript-first-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewaolczak/typescript-first-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewaolczak/typescript-first-project/issues"
+  },
+  "homepage": "https://github.com/ewaolczak/typescript-first-project#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
