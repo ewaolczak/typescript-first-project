@@ -1,8 +1,17 @@
 {
-    var btnElem = document.querySelector('.sum-btn');
-    var numInput_1 = document.querySelector('.num-input');
-    function sum(a, b) {
-        console.log(a + b);
+    var persons_1 = [];
+    function addPerson(firstName, lastName) {
+        var name = firstName + lastName;
+        persons_1.push(name);
     }
-    btnElem.addEventListener('click', function () { sum(5, +numInput_1.value); });
+    var firstName = 'John';
+    var lastName = 'Doe';
+    var age = 18;
+    var person = {
+        firstName: firstName,
+        lastName: lastName
+    };
+    addPerson(person.firstName, person.lastName);
+    addPerson('Amanda', 'Doe');
+    addPerson('Thomas', 'Jefferson');
 }
