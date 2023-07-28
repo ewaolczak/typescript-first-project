@@ -1,9 +1,24 @@
-function join(valOne: number | string, valTwo: number | string) {
-  if(typeof valOne === 'number' && typeof valTwo === 'number') return valOne + valTwo
-  else (typeof valOne === 'string' && typeof valTwo === 'string') return valOne.toString() + valTwo.toString()
-  return false
+function showMyName(name) {
+  console.log(name)
 }
 
-const one = join('John', 'Doe') // should return JohnDoe
-const two = join(5, 6) // should return 11
-const three = join(5, '5') // should return false
+showMyName('John')
+
+function square(a) {
+  return a * a
+}
+
+square(10)
+
+function sum(title, ...numbers) {
+  return title + ' = ' + numbers.reduce((sum, num) => sum + num, 0)
+}
+
+sum('Numbers', 1, 6, 10)
+
+const executeFunc = func => {
+  const title = 'Lorem Ipsum'
+  func(title, 24, ['Sport', 'Movies'])
+}
+
+executeFunc((title, age, hobbies) => { return true })
